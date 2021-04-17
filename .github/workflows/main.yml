@@ -12,3 +12,5 @@ jobs:
         who-to-greet: 'Mona the Octocat'
     - run: echo my-generated-random-number ${{ steps.foo.outputs.random-number }}
       shell: bash
+    - run: echo workspace ${{ github.worspace }} and ${{ github.workflow }}
+      shell: bash
